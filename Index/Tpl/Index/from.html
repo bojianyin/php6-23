@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__PUBLIC__/form.css">
+</head>
+<body>
+	<form action="{:U('handle')}" method="post">
+		<input type="text" name="use">
+		<input type="password" name="pwd">
+		<input type="submit">
+	</form>
+{$data}
+{:mt_rand(1,5)}
+
+	<!-- <foreach name="with" key="k" item="v">
+	
+		{$v.id}
+		{$v.time|date='y-m-d H:i',###}
+	</foreach>> -->
+</body>
+</html>
